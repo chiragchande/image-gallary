@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-x: hidden; 
+    background-color: #c1d2e0;
+}
+#nav{
+    display: block;
+    background: crimson;
+   position: absolute;
+   top:0;
+   left:0;
+   width: 100vw;
+    font-size:25px;
+    min-height: 9vh;
+    border-radius: 2px;
+    position: sticky;
+}
+#ul-li{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #afc9a9;
+}
+.nav-links{
+    padding: 20px 30px;
+display: flex;
+background-color: #d6d4c5;
+border-radius: 5px;
+}
+.nav-links:hover{
+background-color: #c1d2e0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+li{
+    list-style: none;
+}
+img{
+    width:320px;
+    height:280px;
+    object-fit: cover;
+    object-position: top;
+}
+.Nature-h1{
+    margin-top: 10px;
+    padding: 30px 10px 20px;
+}
+.Cars-h1{
+    padding: 20px 10px;
+}
+.Bikes-h1{
+    padding: 20px 10px;
+}
+#grid{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));;
+    justify-items: center;
+    align-items: center;
+   
+}
+
+/*
+#grid2{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#grid3{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+*/
+#flex1 , #flex2{ 
+    display: flex;
+    flex-wrap: wrap;
+   align-self: center;
+    justify-content: space-around;
+}
+#flex1{
+    margin-bottom: 20px;
+}
+
+
+/* sab explanation yeah prr aaygee 
+ isko sid ebye side kar 
+ sab si phale nav ko responsive baha hai
+ abhi dek @ media mi check karne ka ki woo work karh ahai ki nahi 
+ deka hamne body ko display none deya @ 640oprr abhid dek
+ haa 640si samll hoga tho media query ki inside ka code work kareg gaa  simple
+ samja ider tak
+ nav bar bus naa
+ yee suun rha hai ki nahi
+ wai kar rhe hai abhi 
+
+ dek body gya mtb media query working hai 
+*/
+@media screen and (max-width:740px){
+    #nav{
+        display: block;
+       width: 100vw;
+        font-size:20px;
+        min-height: 7vh;
+        border-radius: 5px;
+    }
+    #ul-li{
+    height: 7vh;
+    }
+    
+ a .nav-links {
+    padding: 18px 28px;
+display: flex;
+justify-content: space-around;
+background-color: #d6d4c5;
+border:none;
+border-radius: 10px;
+transition: all 0.3s ease 0s;
+}
+a .nav-links:hover{
+    background-color: #c1d2e0;
+    }
+    #grid:nth-child(2){
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+
+    }
+    #flex1, #flex2{
+        flex-direction: row;
+        
+    }
+    #flex1>img,#flex2>img{
+        margin-bottom: 20px; 
+    }
+}
