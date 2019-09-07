@@ -144,5 +144,17 @@ a .nav-links:hover{
     }
     #flex1>img,#flex2>img{
         margin-bottom: 20px; 
+    
     }
+    .footer{
+        font-size: 10px;
+    }
+}
+.footer{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #4f3d24;
+    margin: 0;
+    padding: 25px;
 }
